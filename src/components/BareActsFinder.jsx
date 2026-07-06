@@ -22,7 +22,7 @@ export default function BareActsFinder({ language = "en" }) {
       explaining: "Explaining...",
       preloadedTitle: "Preloaded Sections Key Reference",
       noResults: "No sections found matching",
-      aiLabel: "VakeelSaab AI Explanation:"
+      aiLabel: "LexSuite AI Explanation:"
     },
     hi: {
       sidebarTitle: "कानून पुस्तक चुनें",

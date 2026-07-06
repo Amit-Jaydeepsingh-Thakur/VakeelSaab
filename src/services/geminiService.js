@@ -49,7 +49,7 @@ async function generateContentWithFallback(prompt, generationConfig = {}, isJson
       const result = await model.generateContent(prompt);
       return result.response.text();
     } catch (err) {
-      console.warn(`VakeelSaab: Model "${modelName}" failed. Falling back. Error:`, err.message || err);
+      console.warn(`LexSuite: Model "${modelName}" failed. Falling back. Error:`, err.message || err);
       lastError = err;
     }
   }
@@ -77,7 +77,7 @@ export const geminiService = {
         ? `Chat History:\n${history.map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.content}`).join('\n')}\n\n`
         : "";
 
-      const systemPrompt = `You are VakeelSaab, an expert Indian legal assistant. Your target audience includes both Indian lawyers and common citizens.
+      const systemPrompt = `You are LexSuite, an expert Indian legal assistant. Your target audience includes both Indian lawyers and common citizens.
 Analyze the user's query and provide a structured JSON response.
 
 You must write all the text content values (like strategy titles, detailed content, pros/cons list items, key sections summaries, and timeline events) translated into the selected language: ${language}.
@@ -149,7 +149,7 @@ The response must strictly match this JSON schema:
         return `${msg.role === 'user' ? 'User' : 'Assistant'}: ${typeof msg.content === 'object' ? JSON.stringify(msg.content) : msg.content}`;
       }).join('\n');
 
-      const prompt = `You are VakeelSaab, an expert Indian legal assistant.
+      const prompt = `You are LexSuite, an expert Indian legal assistant.
 The user has chosen Strategy ${adoptedStrategy} for their case.
 Answer the user's follow-up question in accordance with Indian Law, keeping the context of Strategy ${adoptedStrategy}.
 
@@ -213,7 +213,7 @@ ${text}
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert Indian legal draftsman.
+      const prompt = `You are LexSuite, an expert Indian legal draftsman.
 Draft a professional, standard legal document based on this request: "${promptText}".
 Ensure the draft is structured formally, utilizes standard Indian court and contractual vocabulary (including proper sections/clauses where applicable), and fits Indian legal practice.
 
@@ -240,7 +240,7 @@ Draft Request: ${promptText}`;
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert Indian legal assistant.
+      const prompt = `You are LexSuite, an expert Indian legal assistant.
 Analyze the following raw client case description or facts and generate a highly professional, structured Case Brief / Synopsis.
 
 The brief must be written entirely in the selected language: ${language}.
@@ -283,7 +283,7 @@ ${narrative}
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert Indian legal researcher.
+      const prompt = `You are LexSuite, an expert Indian legal researcher.
 You are tasked with finding landmark Supreme Court of India or High Court judgments/precedents for this legal issue: "${legalIssue}".
 
 Provide 2-3 key relevant judgments. For each judgment, provide:
@@ -314,7 +314,7 @@ Legal Research Query: "${legalIssue}"`;
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert on the transition from the legacy Indian Penal Code (IPC), 1860 to the new Bharatiya Nyaya Sanhita (BNS), 2023.
+      const prompt = `You are LexSuite, an expert on the transition from the legacy Indian Penal Code (IPC), 1860 to the new Bharatiya Nyaya Sanhita (BNS), 2023.
 Analyze this query: "${query}". Identify the relevant old IPC section and its equivalent new BNS section.
 
 Provide a detailed comparison card. Output in clean Markdown format with these sections:
@@ -343,7 +343,7 @@ Write the response ENTIRELY in ${language}. Do not write introductory or conclud
     }
 
     try {
-      const prompt = `You are VakeelSaab, a professional Indian court clerk.
+      const prompt = `You are LexSuite, a professional Indian court clerk.
 Draft a highly formal, respectful, and standard **Adjournment Application / Passover Slip** to be filed in court.
 
 Use this input metadata:
@@ -379,7 +379,7 @@ Instructions:
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert contract auditor and negotiator under Indian law.
+      const prompt = `You are LexSuite, an expert contract auditor and negotiator under Indian law.
 Analyze the following agreement text and create a comprehensive **Risk and Clause Audit Report**.
 
 The report must be written entirely in the selected language: ${language}.
@@ -417,7 +417,7 @@ ${contractText}
     }
 
     try {
-      const prompt = `You are VakeelSaab, a legal advisor helping citizens register grievances with the police.
+      const prompt = `You are LexSuite, a legal advisor helping citizens register grievances with the police.
 Draft a highly formal, legally grounded **Complaint Letter** addressed to the Station House Officer (SHO) of the local police station or the Superintendent of Police (SP) under Section 173(4) of Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023 (formerly Section 154(3) CrPC) seeking registration of an FIR.
 
 Use this metadata:
@@ -451,7 +451,7 @@ Instructions:
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert advisor on the Right to Information (RTI) Act, 2005 in India.
+      const prompt = `You are LexSuite, an expert advisor on the Right to Information (RTI) Act, 2005 in India.
 Draft a formal **RTI Application** based on the following details:
 
 - Public Authority: ${details.authorityName}
@@ -485,7 +485,7 @@ Instructions:
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert Indian courtroom clerk.
+      const prompt = `You are LexSuite, an expert Indian courtroom clerk.
 Draft a highly formal, standard **Vakalatnama** to be filed in court.
 
 Use this metadata:
@@ -519,7 +519,7 @@ Instructions:
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert civil litigation lawyer in India.
+      const prompt = `You are LexSuite, an expert civil litigation lawyer in India.
 Draft a formal **Caveat Petition under Section 148A of the Code of Civil Procedure (CPC), 1908** to be filed in court.
 
 Use this metadata:
@@ -552,7 +552,7 @@ Instructions:
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert consumer litigation lawyer in India.
+      const prompt = `You are LexSuite, an expert consumer litigation lawyer in India.
 Draft a formal **Legal Notice under the Consumer Protection Act, 2019** for deficiency of service / defective goods.
 
 Use this metadata:
@@ -587,7 +587,7 @@ Instructions:
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert criminal defense advocate in India.
+      const prompt = `You are LexSuite, an expert criminal defense advocate in India.
 Draft a formal **Bail Application under Section 480 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023** (formerly Section 437/439 of CrPC).
 
 Use this metadata:
@@ -629,7 +629,7 @@ Instructions:
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert Indian RERA auditor.
+      const prompt = `You are LexSuite, an expert Indian RERA auditor.
 Query your knowledge database for the Indian RERA project registration number: "${regNo}" registered in the state of "${stateName}".
 
 You must return a valid JSON object containing these keys:
@@ -649,7 +649,7 @@ Return ONLY the raw JSON object. Do not wrap it in markdown code fences or add c
       try {
         return JSON.parse(cleanJSONString(responseText));
       } catch (jsonErr) {
-        console.warn("VakeelSaab: JSON parse failed. Extracting values manually.", jsonErr);
+        console.warn("LexSuite: JSON parse failed. Extracting values manually.", jsonErr);
         // Clean up brackets and attempt a basic regex capture or fallback
         const cleanText = responseText.replace(/[\r\n\t]/g, " ");
         const projName = (cleanText.match(/"projectName"\s*:\s*"([^"]+)"/) || [])[1] || "Simulated Housing Residency";
@@ -686,7 +686,7 @@ Return ONLY the raw JSON object. Do not wrap it in markdown code fences or add c
     }
 
     try {
-      const prompt = `You are VakeelSaab, an expert Indian RERA auditor.
+      const prompt = `You are LexSuite, an expert Indian RERA auditor.
 Below is the raw, copied text from an official state RERA project details sheet.
 
 Pasted Text:
@@ -709,7 +709,7 @@ Return ONLY the raw JSON object. Do not wrap it in markdown code fences or add c
       try {
         return JSON.parse(cleanJSONString(responseText));
       } catch (jsonErr) {
-        console.warn("VakeelSaab: JSON parse failed for pasted sheet. Extracting values manually.", jsonErr);
+        console.warn("LexSuite: JSON parse failed for pasted sheet. Extracting values manually.", jsonErr);
         const cleanText = responseText.replace(/[\r\n\t]/g, " ");
         const projName = (cleanText.match(/"projectName"\s*:\s*"([^"]+)"/) || [])[1] || "Parsed Housing Society";
         const promoter = (cleanText.match(/"promoter"\s*:\s*"([^"]+)"/) || [])[1] || "Parsed Developers Ltd";

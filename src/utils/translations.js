@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    title: "VakeelSaab",
+    title: "LexSuite - Lawyer & Litigant Desk",
     subtitle: "Law Desk Workspace for Lawyers & Litigants",
     assistantBadge: "Indian Legal Assistant",
     resetBtn: "Reset Desk",
@@ -31,11 +31,11 @@ export const translations = {
     tabStampCalculator: "Court Fee & Stamps",
     
     // Consultation Room
-    welcomeTitle: "VakeelSaab",
+    welcomeTitle: "LexSuite - Lawyer & Litigant Desk",
     welcomeSubtitle: "An advanced AI Legal Assistant workspace. Describe your case or dispute below. We will formulate two distinct courses of action (Amicable Advisory vs. Statutory Litigation) for your review.",
-    disclaimer: "VakeelSaab provides general advisory reference, not formal court attorney representation.",
+    disclaimer: "LexSuite provides general advisory reference, not formal court attorney representation.",
     placeholderInput: "Explain your case facts or query in detail (e.g. Cheque bounce, eviction, contract breach)...",
-    analyzing: "VakeelSaab is analyzing...",
+    analyzing: "LexSuite is analyzing...",
     askFollowUpPlaceholder: "Ask a follow-up question regarding the adopted strategy...",
     activeStrategy: "Active Strategy",
     unadoptedConsultation: "Unadopted Consultation",
@@ -59,7 +59,7 @@ export const translations = {
     divorceDesc: "Procedure for filing joint petition under Section 13B of the Hindu Marriage Act."
   },
   hi: {
-    title: "वकीलसाहब",
+    title: "LexSuite - वकील और मुवक्किल डेस्क",
     subtitle: "वकीलों और मुवक्किलों के लिए कानूनी कार्यक्षेत्र",
     assistantBadge: "भारतीय कानूनी सहायक",
     resetBtn: "डेस्क रीसेट करें",
@@ -90,11 +90,11 @@ export const translations = {
     tabStampCalculator: "कोर्ट फीस और स्टांप",
     
     // Consultation Room
-    welcomeTitle: "वकीलसाहब",
+    welcomeTitle: "LexSuite - वकील और मुवक्किल डेस्क",
     welcomeSubtitle: "एक उन्नत एआई कानूनी सहायक। नीचे अपने मामले या विवाद का विवरण दें। हम आपकी समीक्षा के लिए दो अलग-अलग रणनीतियाँ (सौहार्दपूर्ण सलाह बनाम अदालती मुकदमों) तैयार करेंगे।",
-    disclaimer: "वकीलसाहब सामान्य कानूनी सलाह प्रदान करते हैं, यह औपचारिक अदालत वकील प्रतिनिधित्व नहीं है।",
+    disclaimer: "LexSuite सामान्य कानूनी सलाह प्रदान करते हैं, यह औपचारिक अदालत वकील प्रतिनिधित्व नहीं है।",
     placeholderInput: "अपने मामले के तथ्यों या प्रश्न को विस्तार से समझाएं (जैसे चेक बाउंस, बेदखली, अनुबंध उल्लंघन)...",
-    analyzing: "वकीलसाहब विश्लेषण कर रहे हैं...",
+    analyzing: "LexSuite विश्लेषण कर रहे हैं...",
     askFollowUpPlaceholder: "अपनाई गई रणनीति के संबंध में अनुवर्ती प्रश्न पूछें...",
     activeStrategy: "सक्रिय रणनीति",
     unadoptedConsultation: "बिना अपनाई गई सलाह",
@@ -118,7 +118,7 @@ export const translations = {
     divorceDesc: "हिंदू विवाह अधिनियम की धारा 13B के तहत संयुक्त याचिका दायर करने की प्रक्रिया।"
   },
   mr: {
-    title: "वकीलसाहेब",
+    title: "LexSuite - वकील आणि पक्षकार डेस्क",
     subtitle: "वकील आणि पक्षकारांसाठी कायदेशीर डेस्क",
     assistantBadge: "भारतीय कायदेशीर सहाय्यक",
     resetBtn: "डेस्क रीसेट करा",
@@ -149,11 +149,11 @@ export const translations = {
     tabStampCalculator: "कोर्ट फी आणि मुद्रांक",
     
     // Consultation Room
-    welcomeTitle: "वकीलसाहेब",
-    welcomeSubtitle: "एक प्रगत एआय कायदेशीर सहाय्यक. खाली आपल्या खटल्याचे किंवा वादाचे तपशील सांगा. आम्ही आपल्या पुनरावलोकनासाठी दोन वेगवेगळ्या रणनीती (तडजोड सल्ला विरुद्ध न्यायालयীন खटला) तयार करू.",
-    disclaimer: "वकीलसाहेब सामान्य कायदेशीर सल्ला प्रदान करतात, हे औपचारिक न्यायालयीन वकील प्रतिनिधित्व नाही.",
+    welcomeTitle: "LexSuite - वकील आणि पक्षकार डेस्क",
+    welcomeSubtitle: "एक प्रगत एआय कायदेशीर सहाय्यक. खाली आपल्या खटल्याचे किंवा वादाचे तपशील सांगा. आम्ही आपल्या पुनरावलोकनासाठी दोन वेगवेगळ्या रणनीती (तडजोड सल्ला विरुद्ध न्यायालयीन खटला) तयार करू.",
+    disclaimer: "LexSuite सामान्य कायदेशीर सल्ला प्रदान करतात, हे औपचारिक न्यायालयीन वकील प्रतिनिधित्व नाही.",
     placeholderInput: "तुमच्या खटल्याचे तथ्य किंवा प्रश्न तपशीलवार सांगा (उदा. चेक बाऊन्स, घर खाली करणे, करार उल्लंघन)...",
-    analyzing: "वकीलसाहेब विश्लेषण करत आहेत...",
+    analyzing: "LexSuite विश्लेषण करत आहेत...",
     askFollowUpPlaceholder: "स्वीकारलेल्या रणनीतीबाबत पुढील प्रश्न विचारा...",
     activeStrategy: "सक्रिय रणनीती",
     unadoptedConsultation: "अस्वीकृत सल्लामसलत",

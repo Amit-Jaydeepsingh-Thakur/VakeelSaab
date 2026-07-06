@@ -150,7 +150,7 @@ export default function ReraDesk({ language = "en" }) {
     if (!searchRegNo.trim()) return;
 
     const queryKey = searchRegNo.trim().toLowerCase();
-    const cacheKey = `vakeelsaab_rera_cache_${selectedState.toLowerCase()}_${queryKey}`;
+    const cacheKey = `lexsuite_rera_cache_${selectedState.toLowerCase()}_${queryKey}`;
     const registryKey = `${selectedState.toLowerCase()}_${queryKey}`;
 
     setSearchLoading(true);
@@ -244,7 +244,7 @@ export default function ReraDesk({ language = "en" }) {
       const totalClaim = principal + simpleInterest;
 
       // Request Gemini to draft a formal RERA Form M Complaint
-      const prompt = `You are VakeelSaab, an expert RERA real estate advocate in India.
+      const prompt = `You are LexSuite, an expert RERA real estate advocate in India.
 Draft a formal **Form M Complaint to the RERA Authority** for delay in handing over possession under Section 18 of the RERA Act, 2016.
 
 Use this metadata:

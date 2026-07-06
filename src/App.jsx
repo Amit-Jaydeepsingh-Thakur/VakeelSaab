@@ -38,7 +38,7 @@ export default function App() {
 
   // Check if tour should run on first visit
   useEffect(() => {
-    const tourDone = localStorage.getItem("vakeelsaab_tour_done");
+    const tourDone = localStorage.getItem("lexsuite_tour_done");
     if (tourDone !== "true") {
       setShowTour(true);
     }
@@ -99,11 +99,11 @@ export default function App() {
   // Visual Tour Steps definition
   const tourSteps = [
     {
-      title: { en: "Welcome to VakeelSaab!", hi: "वकीलसाहब में आपका स्वागत है!", mr: "वकीलसाहेब मध्ये आपले स्वागत आहे!" }[language],
+      title: { en: "Welcome to LexSuite!", hi: "LexSuite में आपका स्वागत है!", mr: "LexSuite मध्ये आपले स्वागत आहे!" }[language],
       body: {
-        en: "Welcome to your Indian Legal Workspace. VakeelSaab has been structured into three target zones to help ordinary citizens, professional lawyers, and common users navigate their cases efficiently. Let's take a quick 1-minute walkthrough.",
-        hi: "आपके भारतीय कानूनी कार्यक्षेत्र में आपका स्वागत है। वकीलसाहब को आम नागरिकों, वकीलों और साझा उपयोगकर्ताओं के लिए तीन क्षेत्रों में व्यवस्थित किया गया है। आइए एक त्वरित 1 मिनट का दौरा करें।",
-        mr: "तुमच्या भारतीय कायदेशीर कार्यक्षेत्रात आपले स्वागत आहे. वकीलसाहेबला सामान्य नागरिक, व्यावसायिक वकील आणि सामायिक वापरकर्त्यांसाठी तीन विभागांमध्ये विभागले गेले आहे. चला १ मिनिटाचा फेरफटका मारूया."
+        en: "Welcome to your Indian Legal Workspace. LexSuite has been structured into three target zones to help ordinary citizens, professional lawyers, and common users navigate their cases efficiently. Let's take a quick 1-minute walkthrough.",
+        hi: "आपके भारतीय कानूनी कार्यक्षेत्र में आपका स्वागत है। LexSuite को आम नागरिकों, वकीलों और साझा उपयोगकर्ताओं के लिए तीन क्षेत्रों में व्यवस्थित किया गया है। आइए एक त्वरित 1 मिनट का दौरा करें।",
+        mr: "तुमच्या भारतीय कायदेशीर कार्यक्षेत्रात आपले स्वागत आहे. LexSuite ला सामान्य नागरिक, व्यावसायिक वकील आणि सामायिक वापरकर्त्यांसाठी तीन विभागांमध्ये विभागले गेले आहे. चला १ मिनिटाचा फेरफटका मारूया."
       }[language],
       tab: "consultation"
     },
@@ -166,7 +166,7 @@ export default function App() {
   };
 
   const handleCompleteTour = () => {
-    localStorage.setItem("vakeelsaab_tour_done", "true");
+    localStorage.setItem("lexsuite_tour_done", "true");
     setShowTour(false);
     setActiveTab("consultation");
     setCitizensExpanded(true);
